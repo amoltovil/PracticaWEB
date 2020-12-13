@@ -1,0 +1,206 @@
+h1, h2{
+    color: 	#7852a9;
+    margin-left:20px;
+    display: block;
+    font-weight: bold;
+}    
+
+h3, h4{
+    color: black;
+    margin-left:20px;
+    display: block;
+}    
+
+/* #novedades, #series, #peliculas */
+#favoritos
+{
+    position: relative;
+    height:auto;
+    width:auto;
+    display:flex; 
+}
+
+.slide{
+    float:left; 
+    flex:1;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_nov {
+    float:left; 
+    flex:1;
+    overflow: hidden; 
+    position: relative;
+}
+
+.favoritos{
+    width: 100%; 
+    /* background-color:#ccc;  */
+    margin-left:10px; 
+}    
+
+.img_rejilla{
+    width: 170px;
+    height: 200px;
+    margin: auto;
+    border-radius:5px;
+    /* display: block;   */
+    padding:1;
+    border:1px solid #ccc;
+}
+
+.img-nov, .img-serie, .img-mov{
+    width: 220px;
+    height: 290px;
+    margin:10px;
+    padding:10px;
+    border: 5px solid #fff;
+}
+
+.img_pel_sim, .img_temp {
+    width: 220px;
+    height: 290px;
+    margin-bottom: 0px;
+    padding:10px;
+}
+
+.content, .content_nov {
+    position:relative;
+}
+
+/* en flexbox */
+/* .novedades {
+    display:flex;
+    position:relative;  
+} */
+
+/* En grid */
+.nov-movies, .nov-series, .series {
+    display:grid;
+    grid-template-columns: 250px 250px;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+}
+    
+.peliculas{
+    display:grid;
+    grid-template-columns: 250px 250px 250px 250px; 
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+}
+
+.oculto {
+    position: absolute;
+    bottom: 0;
+    top:0;
+    margin:0;
+    padding:0;
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1;
+    width: 100%; 
+    transition: .5s ease;
+    opacity:0;
+    font-size: 0.75rem;
+  }
+
+  .img_fav {
+    position: absolute;
+    bottom: 0;
+    top:0;
+    margin:0;
+    padding:0;
+    /* background: rgba(0, 0, 0, 0.5);  */
+    color: #000;
+    width: 20%;  
+    opacity:1;
+    font-size: 1rem;
+ }  
+
+.content:hover .oculto {
+    opacity: 1;
+}
+
+.masdetalle pre {
+    font-size:0.7rem;
+    margin: 0 10px 0 15px;
+    padding:10px 0 15px 0;
+}
+
+/* hide checkbox */
+ #checkbox-like, 
+ #checkbox-like2, 
+ #checkbox-like3, 
+ #checkbox-like4, 
+ #checkbox-like5,
+ #checkbox-like6,
+ #checkbox-like7, 
+ #checkbox-like8, 
+ #checkbox-like9,
+ #checkbox-like10
+  {
+    display: none;
+  }
+  
+  /* hide liked img */
+  #checkbox-like ~ label .liked-img, 
+  #checkbox-like2 ~ label .liked-img, 
+  #checkbox-like3 ~ label .liked-img, 
+  #checkbox-like4 ~ label .liked-img, 
+  #checkbox-like5 ~ label .liked-img, 
+  #checkbox-like6 ~ label .liked-img, 
+  #checkbox-like7 ~ label .liked-img, 
+  #checkbox-like8 ~ label .liked-img, 
+  #checkbox-like9 ~ label .liked-img, 
+  #checkbox-like10 ~ label .liked-img
+  {
+    display: none;
+  }
+  
+  #checkbox-like ~ label .likepending-img,
+  #checkbox-like2 ~ label .likepending-img,
+  #checkbox-like3 ~ label .likepending-img, 
+  #checkbox-like4 ~ label .likepending-img,
+  #checkbox-like5 ~ label .likepending-img,
+  #checkbox-like6 ~ label .likepending-img, 
+  #checkbox-like7 ~ label .likepending-img,
+  #checkbox-like8 ~ label .likepending-img,
+  #checkbox-like9 ~ label .likepending-img, 
+  #checkbox-like10 ~ label .likepending-img
+   {
+    display: block;
+  }
+  
+  /* show liked img when checkbox is checked */
+  #checkbox-like:checked ~ label .liked-img,
+  #checkbox-like2:checked ~ label .liked-img,
+  #checkbox-like3:checked ~ label .liked-img,
+  #checkbox-like4:checked ~ label .liked-img,
+  #checkbox-like5:checked ~ label .liked-img,
+  #checkbox-like6:checked ~ label .liked-img,
+  #checkbox-like7:checked ~ label .liked-img,
+  #checkbox-like8:checked ~ label .liked-img,
+  #checkbox-like9:checked ~ label .liked-img,
+  #checkbox-like10:checked ~ label .liked-img
+   {
+    display: block;
+  }
+  
+  /* hide unlike when checkbox is checked */
+  #checkbox-like:checked ~ label .likepending-img, 
+  #checkbox-like2:checked ~ label .likepending-img, 
+  #checkbox-like3:checked ~ label .likepending-img,
+  #checkbox-like4:checked ~ label .likepending-img,
+  #checkbox-like5:checked ~ label .likepending-img,
+  #checkbox-like6:checked ~ label .likepending-img, 
+  #checkbox-like7:checked ~ label .likepending-img, 
+  #checkbox-like8:checked ~ label .likepending-img,
+  #checkbox-like8:checked ~ label .likepending-img,
+  #checkbox-like10:checked ~ label .likepending-img
+  {
+    display: none;
+  }
+  
+  /* .img_nov {
+      background: url('/media/img/star-line.png') ;
+  } */

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso a AMV - MOVIES & SERIES</title>
+     <!-- Icono pequeño de la web -->
+     <link rel="shortcut icon" type ="image/x-icon" href="./media/img/logo.jpg">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css"> 
+    <link rel="stylesheet" href="./css/navbar_index.css">
+   
+</head>
+<body>
+    <!-- <header class="headeri">
+        <span style="visibility: hidden;"> Entrada a la página AMV - MOVIES & SERIES</span>
+    </header> -->
+    <!-- <div id ="logoind"><img src="./media/img/logo.jpg" alt="Logo de la página" class="logoind"></div> -->
+    <!-- Barra de Navegación -->
+    <nav id="navbar-ind" class="navbar-ind" >
+        
+        <ul class="navbar-ind-list">
+            <li class="navbar-ind-item"><a href="#acceso" title="Acceso AMV Movies & Series">AMV - Movies & Series </a></li>
+            <li class="navbar-ind-item"><a href="#contacto" title="Contacto AMV Movies & Series">Contacto</a></li>
+        </ul>
+        
+    </nav>
+
+<main>
+<section id="acceso">
+    <!-- Dónde irá el acceso a la página principal. Formulario de Acceso -->
+
+    <!-- el método correcto seria POST, pero para que nos funcione en esta 
+    práctica ponemos el método GET -->
+    <div class="accesod">
+        <h1 class="accesoh1">Iniciar Sesión</h1>
+    </div> 
+    <!-- <div class="accesod">
+        <h2 class="accesoh2">Si tiene una cuenta de usuario, inicie sesión con su dirección de correo electrónico.</h2>
+    </div>  -->
+  
+    <form action="./principal.html" method="GET" name="contact-access"  id="contact-access" class="form_access">
+     <div class="contact-dataacceso">
+        <h2 class="accesoh2"><label for="email_a">Correo electrónico <sup>*</sup></label>
+        <input type="email" id="email" name="email_a" required>
+        </h2>
+        <h2 class="accesoh2">
+        <label for="password_a">Contraseña <sup>*</sup></label>
+        <input type="password" id="password" name="password_a" required>
+        </h2>
+        <h3>
+        <p><sup>*</sup> Campos Obligatorios</p> </h3>
+        <label for="recordar">
+          <input type="checkbox" id="recordar" name="recordar"> Recordar Contraseña 
+        </label>   
+
+        <p><input type="submit" id="accesob" name ="accesob" value="Iniciar Sesión">
+           <a href="/principal.html" target="_parent" rel ='nofollow noopener noreferrer'>
+           </a>
+        </p>
+
+        <p><h2><a href="#" class="accesoh2">¿Olvido su contraseña?</a></h2></p>
+      </div>
+    </form>
+ </section>
+
+
+
+<section id="contacto" >
+  <!-- <fieldset> -->
+    
+    <form action= "" method="GET"  name="contact-form"  id="contact-form" class="form_contact">
+      <div class="contact-data">
+        <h3 class="form_contact">Contacto</h3>
+        
+          <h4 class="form_contact"><label for="name_c" class="form_contact" >Introduzca su nombre: </label>
+          <input type="text" id="name_c" name="name_c" placeholder="Introduzca su nombre" /></h4>
+       
+          <h4 class="form_contact"><label for="email" class="form_contact" >Introduzca su e-mail: </label>
+          <input type="email" id="email_c" name="email_c" placeholder="Introduzca su email" required /></h4>
+      
+          <h4 class="form_contact"><label for="subject_c" class="form_contact" >Asunto:</label>
+          <input type="text" id="subject_c" name="subject_c" placeholder="Asunto" /></h4>
+      
+        <div class="message-data">
+        <h4 class="form_contact"><label for="message_c" class="form_contact" >Mensaje:</label>
+          <textarea id="message_c" name="message_c" placeholder="Escriba su mensaje" required></textarea></h4>
+        </div>
+      </div>
+      <p class="actions">
+       <input type="submit" name="send" value="Enviar EMail" title="Gracias por contactarnos" />
+       <a href="./notfound.html" target="_parent">
+      </a>
+      </p>
+    </form>
+  <!-- </fieldset> -->
+  </section>
+
+</main>
+   
+<footer>
+  <hr>
+
+    <nav class="navbar-footer">
+    <ul class="navbar-footer-list">
+        <li class="navbar-footer-item"><a href="#" target="_blank" rel="noopener noreferrer nofollow" title="Facebook AMV Movies & Series">
+          <img src="/media/img/facebook-circle-fill.png" alt="Logo Facebook">Facebook</a></li>
+        <li class="navbar-footer-item"><a href="#" target="_blank" rel="noopener noreferrer nofollow" title="Twitter AMV Movies & Series">
+          <img src="/media/img/twitter-fill.png" alt="Logo Twitter">Twitter
+        </a></li>
+        <li class="navbar-footer-item"><a href="#" target="_blank" rel="noopener noreferrer nofollow" title="Linkedin AMV Movies & Series">
+          <img src="/media/img/linkedin-box-fill.png" alt="Logo Linkein">
+          Linkedin</a></li>
+    </ul>
+    </nav>
+    
+</footer>
+
+</body>
+</html>

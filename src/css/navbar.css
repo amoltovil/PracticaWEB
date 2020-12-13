@@ -1,0 +1,144 @@
+
+.navbar {
+
+  position:fixed; 
+  text-decoration-style: solid; 
+  background-color:rgb(221,160, 221);
+  width:100%; /*ocupa el 100% del display*/
+  top: 0;
+  left: 0;
+  height: var(--navbar-height); 
+  
+}
+
+.logo {
+  font-size:1rem;
+  color:#fff; 
+  line-height: var(--navbar-height);
+  text-align: left;
+}
+
+#burger-checkbox {
+  display: none;
+}
+
+.burger-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  /* no es necesario para dispositivo táctil */
+  /* cursor: pointer; */
+}
+
+.burger-label:before {
+  content: '';
+  background-color: darkgrey;
+  width: 2rem;
+  height: 0.20rem;
+  position: absolute;
+  left: 0.45rem;
+  top: 0.65rem;
+  box-shadow: 0 0.5rem 0 0 darkgray, 0 1rem 0 0 darkgray;
+}
+
+/* cerrado */
+.navbar-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* abierto */
+#burger-checkbox:checked ~ .navbar-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: darkgrey;
+  height: calc(100vh - var(--navbar-height));
+  opacity: 0.85;
+}
+
+/* Modo responsive */
+.navbar-item a{
+  color: #fff;
+  display:block;
+  text-align:center; 
+  line-height: 3rem; 
+  font-size: 2rem;
+}
+
+.navbar-item > a:hover {
+  background:rgb(221,160, 221);
+  color: #000;
+}
+
+.navbar input[class="buscar-txt"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 1rem;
+}
+
+/* @media all and (min-width: 1024px) and (max-width: 1280px) { }
+ 
+@media all and (min-width: 768px) and (max-width: 1024px) { }
+ 
+@media all and (min-width: 480px) and (max-width: 768px) { }
+ 
+@media all and (max-width: 480px) { } */
+
+@media (min-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar .logo {
+    margin: 0 1rem;
+  }
+
+  .navbar .burger-label {
+    display: none;
+  }
+
+  .navbar-list {
+    display: flex;
+  }
+
+  .navbar-item a {
+    color: #fff;
+    font-size: 1rem;
+    line-height: var(--navbar-height);
+    padding: 0 1rem;
+  }
+
+}
+
+ @media screen and (max-width: 600px) {
+
+  .navbar input[class="buscar-txt"]{
+    border: 1px solid #ccc;
+  }
+} 
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .navbar .logo {
+    color: #fff;
+  }
+}
+
+/* .mostrar {
+  position: absolute;
+  overflow: hidden;
+  display: none;
+  background-color: plum;
+}
+
+#accion:hover .mostrar{
+  display:block;
+} */

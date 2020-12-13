@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web AMV -SERIES & MOVIES</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/principal.css">
+    <link rel="shortcut icon" type ="image/x-icon" href="./media/img/logo.jpg">
+</head>
+<body>
+    <nav id ="navbar" class="navbar">
+        
+       <div class="logo">AMV - Movies & Series</div> 
+
+           <!-- <img src="./media/img/logo-peq.jpg" alt="Logo de la página" id="logotipo"></div> -->
+        
+           <input type="checkbox" id="burger-checkbox" />
+           <label for="burger-checkbox" class="burger-label"></label>
+
+           <ul class="navbar-list">
+            <li class="navbar-item"><a href="#inicio" id ="inicio"> Inicio</a></li>
+            <li class="navbar-item"><a href="#favoritos">Favoritos</a></li>
+            <li class="navbar-item" id="accion"><a href="#novedades">Novedades</a>
+                <!-- <div class = "mostrar">   
+                    <a href="#nov-movies">Peliculas</a>
+                    <a href="#nov-series">Series</a>    
+                </div> -->
+           </li>
+            <li class="navbar-item"><a href="#series">Series</a></li>
+            <li class="navbar-item"><a href="#peliculas">Películas</a></li>
+            <li class="navbar-item"><a href="#buscar" id="buscar"><input type="text" class="buscar-txt" placeholder="Buscar...." > </a></li>
+            <li class="navbar-item"><a href="index.html" id="cierre-sesion">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+
+    <header id ="inicio" >
+        <p>
+            <h1>Bienvenido a AMV MOVIES & SERIES</h1>
+        </p>
+    </header>
+
+    <main>
+       
+        <section id="favoritos" >
+            <a href="#" name="fav"></a>
+            <div class="favoritos">
+                <h2>Favoritos</h2>
+                <!-- rejilla con las peliculas y series -->
+                <section id="rejilla">
+                    <div class="slide">
+                        <div class="content">
+                        <img class="img_rejilla" src="./media/img/the_mauritanian-mmed.jpg" alt="Imagen Pelicula The Mauritanian" title ="The Mauritanian">
+                        <div class="oculto">
+                        <p><strong>The Mauritanian</strong><br>
+                            Sin calificación <br>
+                            Dic. 2020 / Biografía, Drama, Suspense <br>
+                            Sinopsis:Supuesto terrorista de Al-Qaeda fue detenido y estuvo en prisión durante cuatro años sin ningún juicio y sin cargos.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content">
+                        <img class="img_rejilla" src="./media/img/la_trinchera_infinita-mmed.jpg" alt="Imagen Pelicula La trinchera infinita" title ="La trinchera infinita">
+                        <div class="oculto">
+                            <p><strong>La Trinchera Infinita</strong><br>
+                                Calificación 3,8 <br>
+                                31 de octubre de 2019 / 2h 27min / Drama <br>
+                                Sinopsis: Historia de una pareja recién casada en plena Guerra Civil Española (1936).
+                            </p>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content">
+                        <img class="img_rejilla" src="./media/img/wonderwoman.jpg" alt="Imagen Wonder Woman 1984" title ="Wonder Woman 1984">
+                        <div class="oculto">
+                            <p><strong>Wonder Woman 1984</strong><br>
+                                Calificación 3,9 <br>
+                                18 de diciembre de 2020 / 2h 31min / Acción, Aventura, Fantasía <br>
+                                Sinopsis: Esta segunda entrega de las aventuras de Wonder Woman, la superheroína de DC Comics 
+                                creada por William Moulton Marston, es la continuación de la película Wonder Woman (2017).
+                            </p>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content">
+                        <img class="img_rejilla" src="./media/img/angela_s_christmas_wish-mmed.jpg" alt="Imagen Angela´s Christmas Wish" title ="El deseo de Navidad de Angela">
+                        <div class="oculto">
+                            <p>
+                            <strong>El deseo de Navidad de Ángela</strong><br>
+                            Calificación 3,0 <br>
+                            1 de diciembre de 2020 en Netflix / 0h 47min / Dibujos animados, Familia, Animación <br>
+                            Sinopsis: Ángela desea juntar a toda la familia para las fechas navideñas. 
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content">
+                        <img class="img_rejilla" src="./media/img/brujaescarlatayvision.jpg" alt="Imagen Serie Bruja Escarlata y Visión" title ="Bruja Escarlata y Visión">
+                        <div class="oculto">
+                            <p>
+                            <strong>Bruja Escarlata y Visión</strong><br>
+                            Sin calificación <br>
+                            Fecha de estreno 15 de enero de 2021 / Comedia, Fantasía, Acción <br>
+                            Sinopsis: Esta superheroína, que se convirtió en miembro de Los Vengadores, 
+                            posee poderes para cambiar la realidad de varias formas no específicas además 
+                            de ser una gran hechicera.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content">
+                        <img class="img_rejilla" src="./media/img/the_mandalorian.jpg" alt="Imagen Serie The Mandalorian" title ="The Mandalorian">
+                        <div class="oculto">
+                                <p>
+                                <strong>The Mandalorian</strong><br>
+                                Calificación 4.3 <br>
+                                Desde 2019 / 40min. / Aventura, Ciencia ficción <br>
+                                Sinopsis: The Mandalorian es la nueva serie de ciencia ficción que se centra 
+                                en un guerrero solitario que se encuentra lejos de la autoridad de la Nueva República.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content">
+                        <img class="img_rejilla" src="./media/img/vikings_tv_series-mmed.jpg" alt="Imagen Serie TV Vikings" title ="Vikings">
+                        <div class="oculto">
+                            <p>
+                            <strong>Vikings</strong><br>
+                            Calificación 3,6 <br>
+                            Desde 2013 / 52min. / Aventura, Drama, Histórico <br>
+                            Sinopsis: Este drama histórico de History Channel está centrado en Ragnar Lothbrok, 
+                            figura mítica que aseguraba que era el descendiente de Odín, el dios principal de la mitología nórdica.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="content">
+                        <img class="img_rejilla" src="./media/img/juegodetronos.jpg" alt="Imagen Serie TV Juego de Tronos" title ="Juego de Tronos">
+                        <div class="oculto">
+                            <p>
+                            <strong>Juego de Tronos</strong><br>
+                            Calificación 4,0 <br>
+                            2011 - 2019 / 52min. / Drama, Fantasía <br>
+                            Sinopsis: La serie nos sitúa en Invernalia, uno de los siete reinos del continente de Poniente. 
+                            Tras un largo verano, Lord Eddard 'Ned' Stark, señor de Invernalia, es llamado a ocupar el cargo de Mano del Rey.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </section>  
+            </div>
+        </section>
+
+        <!-- incorporar contenido de las novedades -->
+        <section id="novedades">
+        <!-- Ancla de navegación -->  
+            <a name="nov"></a> 
+
+            <h2>Novedades</h2>
+            <h3>Novedades en Películas</h3>
+            <a name="nov-movies"></a> 
+            <div class="nov-movies">
+                <div class="novpel">
+                <!-- <div class="content_nov"> -->
+                    <a href="./detalle-pelicula.html">
+                    <h4>The Mauritanian</h4></a>
+                    <!-- Añadir checkbox de favorito -->
+                    <input type="checkbox" id="checkbox-like" class="btn-fav">
+                    <label class="checkbox-like-label" for="checkbox-like">
+                      <div class="liked-img">
+                          <img src="/media/img/star-fill.png" width=10%>Desmarcar como favorito
+                      </div>
+                      <div class="likepending-img">
+                          <img src="/media/img/star-line.png" width=10%>Marcar como favorito
+                      </div>
+                    </label>
+                    <img class="img-nov" src="./media/img/the_mauritanian-mmed.jpg" alt="Imagen Pelicula The Mauritanian" title ="The Mauritanian">
+                    <!-- <div class="img_fav">
+                        <img src="/media/img/star-line.png" width=50%>
+                    </div> -->
+                </div>
+                <div class="novpel">
+                    <a href="./detalle-pelicula.html">
+                    <h4>Wonder Woman 1984</h4></a>
+                     <!-- Añadir checkbox de favorito -->
+                     <input type="checkbox" id="checkbox-like2" class="btn-fav">
+                     <label class="checkbox-like-label" for="checkbox-like2">
+                       <div class="liked-img">
+                           <img src="/media/img/star-fill.png" width=10%>
+                       </div>
+                       <div class="likepending-img">
+                           <img src="/media/img/star-line.png" width=10%>
+                       </div>
+                     </label>
+                    <img class="img-nov" src="./media/img/wonderwoman.jpg" alt="Imagen Pelicula Wonder Woman 1984" title ="Wonder Woman 1984">       
+                    
+                </div> 
+            </div>    
+
+            <h3> Novedades en Series</h3>
+            <a name="nov-series"></a> 
+            <div class="nov-series">
+                <div class="novser">
+                    <a href="./detalle-serie.html">
+                    <h4>Bruja Escarlata y Visión</h4> </a>
+                    <!-- Añadir checkbox de favorito -->
+                    <input type="checkbox" id="checkbox-like3" class="btn-fav">
+                    <label class="checkbox-like-label" for="checkbox-like3">
+                      <div class="liked-img">
+                          <img src="/media/img/star-fill.png" width=10%>
+                      </div>
+                      <div class="likepending-img">
+                          <img src="/media/img/star-line.png" width=10%>
+                      </div>
+                    </label>
+                    <img class="img-nov" src="./media/img/brujaescarlatayvision.jpg" alt="Imagen Serie Bruja Escarlata y Visión" title ="Bruja Escarlata y Visión">
+                     
+                </div>
+                <div class="novser">
+                    <a href="./detalle-serie.html">
+                    <h4>The Mandalorian</h4></a>
+                    <!-- Añadir checkbox de favorito -->
+                    <input type="checkbox" id="checkbox-like4" class="btn-fav">
+                    <label class="checkbox-like-label" for="checkbox-like4">
+                      <div class="liked-img">
+                          <img src="/media/img/star-fill.png" width=10%>
+                      </div>
+                      <div class="likepending-img">
+                          <img src="/media/img/star-line.png" width=10%>
+                      </div>
+                    </label>
+                    <img class="img-nov" src="./media/img/the_mandalorian.jpg" alt="Imagen Serie The Mandalorian" title ="The Mandalorian">
+                     
+                </div>  
+            </div>
+        </section>
+
+        <!-- incorporar contenido de las series -->
+        <section id="series">
+            <!-- Ancla de navegación -->  
+            <a name="ser"></a>
+
+            <h2>Series</h2>
+            <div class="series">
+                <div class="ser">
+                    <a href="./detalle-serie.html">
+                    <h4>Vikings</h4></a>
+                    <!-- Añadir checkbox de favorito -->
+                    <input type="checkbox" id="checkbox-like5" class="btn-fav">
+                    <label class="checkbox-like-label" for="checkbox-like5">
+                      <div class="liked-img">
+                          <img src="/media/img/star-fill.png" width=10%>
+                      </div>
+                      <div class="likepending-img">
+                          <img src="/media/img/star-line.png" width=10%>
+                      </div>
+                    </label>
+                    <img class="img-serie" src="./media/img/vikings_tv_series-mmed.jpg" alt="Imagen Serie TV Vikings" title ="Vikings">
+                     
+                </div>
+                <div class="ser">
+                    <a href="./detalle-serie.html">
+                    <h4>Juego de Tronos</h4> </a>
+                    <!-- Añadir checkbox de favorito -->
+                    <input type="checkbox" id="checkbox-like6" class="btn-fav">
+                    <label class="checkbox-like-label" for="checkbox-like6">
+                      <div class="liked-img">
+                          <img src="/media/img/star-fill.png" width=10%>
+                      </div>
+                      <div class="likepending-img">
+                          <img src="/media/img/star-line.png" width=10%>
+                      </div>
+                    </label>
+                    <img class="img-serie" src="./media/img/juegodetronos.jpg" alt="Imagen Serie TV Juego de Tronos" title ="Juego de Tronos">
+                     
+                </div>
+            </div>
+        
+        </section>
+        
+        <!-- incorporar contenido de las películas -->
+        <section id="peliculas">
+            <!-- Ancla de navegación -->  
+            <a name="pel"></a>
+            <h2>Películas</h2>
+
+            <div class="peliculas">
+                <div class="pel">
+                    <a href="./detalle-pelicula.html"><h4>La Trinchera Infinita</h4></a>
+                     <!-- Añadir checkbox de favorito -->
+                     <input type="checkbox" id="checkbox-like7" class="btn-fav">
+                     <label class="checkbox-like-label" for="checkbox-like7">
+                       <div class="liked-img">
+                           <img src="/media/img/star-fill.png" width=10%>
+                       </div>
+                       <div class="likepending-img">
+                           <img src="/media/img/star-line.png" width=10%>
+                       </div>
+                     </label>
+                    <img class="img-mov" src="./media/img/la_trinchera_infinita-mmed.jpg" alt="Imagen Pelicula La trinchera infinita" title ="La trinchera infinita">
+                    
+                </div>    
+                <div class="pel">
+                <a href="./detalle-pelicula.html">
+                <h4>Angela´s Christmas Wish </h4></a>
+                  <!-- Añadir checkbox de favorito -->
+                  <input type="checkbox" id="checkbox-like8" class="btn-fav">
+                  <label class="checkbox-like-label" for="checkbox-like8">
+                    <div class="liked-img">
+                        <img src="/media/img/star-fill.png" width=10%>
+                    </div>
+                    <div class="likepending-img">
+                        <img src="/media/img/star-line.png" width=10%>
+                    </div>
+                  </label>
+                <img class="img-mov" src="./media/img/angela_s_christmas_wish-mmed.jpg" alt="Imagen Angela´s Christmas Wish" title ="El deseo de Navidad de Angela">
+               
+                </div>
+                <div class="pel">
+                    <a href="./detalle-pelicula.html">
+                    <h4>Trolls2 </h4></a>
+                       <!-- Añadir checkbox de favorito -->
+                       <input type="checkbox" id="checkbox-like9" class="btn-fav">
+                       <label class="checkbox-like-label" for="checkbox-like9">
+                         <div class="liked-img">
+                             <img src="/media/img/star-fill.png" width=10%>
+                         </div>
+                         <div class="likepending-img">
+                             <img src="/media/img/star-line.png" width=10%>
+                         </div>
+                       </label>
+                    <img class="img-mov" src="./media/img/trolls2.jpg" alt="Imagen Trolls 2" title ="Trolls 2">
+                  
+                </div>
+                <div class="pel">
+                    <a href="./notfound.html">
+                    <h4>Eráse una vez </h4>
+                     <!-- Añadir checkbox de favorito -->
+                     <input type="checkbox" id="checkbox-like10" class="btn-fav">
+                     <label class="checkbox-like-label" for="checkbox-like10">
+                       <div class="liked-img">
+                           <img src="/media/img/star-fill.png" width=10%>
+                       </div>
+                       <div class="likepending-img">
+                           <img src="/media/img/star-line.png" width=10%>
+                       </div>
+                     </label>
+                    <img class="img-mov" src="./media/img/eraseunavez.jpg" alt="Imagen Eráse una vez" title ="Eráse una vez"></a>
+                    
+                </div>
+            </div>
+        </section>        
+    
+    </main>
+
+    <footer>
+        <hr>
+          <nav class="navbar-footer">
+          <ul class="navbar-footer-list">
+              <li class="navbar-footer-item"><a href="#" target="_blank" rel="noopener noreferrer nofollow" title="Facebook AMV Movies & Series">
+                <img src="/media/img/facebook-circle-fill.png" alt="Logo Facebook">Facebook</a></li>
+              <li class="navbar-footer-item"><a href="#" target="_blank" rel="noopener noreferrer nofollow" title="Twitter AMV Movies & Series">
+                <img src="/media/img/twitter-fill.png" alt="Logo Twitter">Twitter
+              </a></li>
+              <li class="navbar-footer-item"><a href="#" target="_blank" rel="noopener noreferrer nofollow" title="Linkedin AMV Movies & Series">
+                <img src="/media/img/linkedin-box-fill.png" alt="Logo Linkein">Linkedin</a></li>
+          </ul>
+          </nav>
+          
+      </footer>
+
+</body>
+</html>

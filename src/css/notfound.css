@@ -1,0 +1,25 @@
+h1, h2, h3, h4, a{
+    color: #7852a9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+    padding: 1rem;         
+}
+
+.not_found, .mapa{
+    display: flex;
+    flex-direction: column;
+}
+
+.img_not_found{
+    width:100%;
+}
+
+.mapa{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
